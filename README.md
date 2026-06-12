@@ -43,8 +43,8 @@ git clone https://github.com/yust29/astrbot_plugin_setu.git
 
 | 指令 | 说明 | 示例 |
 |------|------|------|
-| `/st` | 获取一张随机图片 | `/st` |
-| `/st <关键词>` | 按关键词搜索 | `/st 初音未来` |
+| `/setu` | 获取一张随机图片 | `/st` |
+| `/setu <关键词>` | 按关键词搜索 | `/st 初音未来` |
 | `/st config` | 查看当前配置 | `/st config` |
 | `/st set <参数> <值>` | 修改配置参数 | `/st set r18 0` |
 | `/st set <参数>` | 查看参数当前值 | `/st set size` |
