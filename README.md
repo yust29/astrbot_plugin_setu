@@ -33,7 +33,7 @@
 
 ```bash
 cd AstrBot/data/plugins
-git clone https://github.com//yust29/astrbot_plugin_setu.git
+git clone https://github.com/yust29/astrbot_plugin_setu.git
 # 或将插件文件夹直接放入 plugins 目录
 ```
 
