@@ -1,0 +1,58 @@
+{
+  "r18": {
+    "description": "R18 模式",
+    "type": "int",
+    "hint": "0: 仅非 R18, 1: 仅 R18, 2: 混合（不限制）",
+    "default": 0,
+    "options": [0, 1, 2]
+  },
+  "num": {
+    "description": "每次获取数量",
+    "type": "int",
+    "hint": "单次请求返回的图片数量，范围 1-20",
+    "default": 1
+  },
+  "size": {
+    "description": "图片尺寸",
+    "type": "string",
+    "hint": "返回图片的尺寸：original(原图), regular(标准), small(小图), thumb(缩略图), mini(迷你)",
+    "default": "regular",
+    "options": ["original", "regular", "small", "thumb", "mini"]
+  },
+  "proxy": {
+    "description": "图片代理地址",
+    "type": "string",
+    "hint": "用于替换图片 URL 的代理域名，如 i.pixiv.re。留空则不使用代理",
+    "default": "i.pixiv.re"
+  },
+  "excludeAI": {
+    "description": "排除 AI 作品",
+    "type": "bool",
+    "hint": "是否排除 AI 生成的作品。开启后将不返回 AI 图片",
+    "default": false
+  },
+  "keyword": {
+    "description": "默认关键词",
+    "type": "text",
+    "hint": "默认搜索关键词，留空则不限定。多个关键词用逗号分隔（OR 逻辑）。用户每次请求时也可通过指令参数临时指定",
+    "default": ""
+  },
+  "tags": {
+    "description": "默认标签",
+    "type": "text",
+    "hint": "默认标签过滤，留空则不限定。格式: 每组内用英文逗号分隔（AND 逻辑），组间用 | 分隔（OR 逻辑）。例如: 甘雨,原神|刻晴,原神 表示 (甘雨 AND 原神) OR (刻晴 AND 原神)",
+    "default": ""
+  },
+  "api_base_url": {
+    "description": "API 请求地址",
+    "type": "string",
+    "hint": "Lolicon API 的基础 URL，国内网络无法直连时可更换为镜像站或反代地址。留空则使用默认 https://api.lolicon.app/setu/v2",
+    "default": ""
+  },
+  "request_proxy": {
+    "description": "API 请求代理",
+    "type": "string",
+    "hint": "请求 Lolicon API 时使用的 HTTP 代理，如 http://127.0.0.1:7890。留空则不使用代理（适用于国内网络需要通过代理访问 api.lolicon.app 的场景）",
+    "default": ""
+  }
+}

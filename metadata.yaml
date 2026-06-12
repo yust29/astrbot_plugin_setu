@@ -1,0 +1,13 @@
+name: astrbot_plugin_setu
+display_name: 色图插件
+short_desc: 基于 Lolicon API 的色图/插画发送插件，支持多项自定义参数配置。
+desc: |
+  通过 Lolicon API (https://api.lolicon.app) 获取二次元插画/色图并在群聊中发送。
+  支持配置 R18 模式、标签过滤、关键词搜索、图片尺寸、代理地址、排除 AI 作品等 API 参数。
+  提供 /st 指令获取随机图片，/st set 指令管理配置参数。
+author: Rec0ilL
+version: 1.0.0
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - qq_official_webhook
